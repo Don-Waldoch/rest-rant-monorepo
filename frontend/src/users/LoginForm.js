@@ -29,6 +29,8 @@ function LoginForm() {
 
     if (response.status === 200) {
       setCurrentUser(data.user)
+      localStorage.setItem('token', data.token)
+      console.log(`JWT: ${data.token}`)
       history.push(`/`)
     } else {
       setErrorMessage(data.message)
