@@ -69,8 +69,6 @@ function PlaceDetails() {
 
   }
 
-
-
   let comments = (
     <h3 className="inactive">
       No comments yet!
